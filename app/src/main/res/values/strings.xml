@@ -1,0 +1,5 @@
+<resources >
+    <string name="app_name" >背单词</string >
+    <string name="title" >背单词</string >
+    <string name="twiceclick_exit" >再点击一次退出</string >
+</resources >

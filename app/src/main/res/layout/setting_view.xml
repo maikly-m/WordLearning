@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    android:gravity="center">
+        <TextView
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:background="@color/primary_dark"/>
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:padding="5dp"
+            android:id="@+id/cb_setting_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空已学习" />
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:padding="5dp"
+            android:id="@+id/cb_setting_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空已复习" />
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:padding="5dp"
+            android:id="@+id/cb_setting_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空生词" />
+
+        <TextView
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:id="@+id/cb_setting_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+
+</LinearLayout >

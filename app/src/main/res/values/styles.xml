@@ -1,0 +1,38 @@
+<resources >
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary" >@color/colorPrimary</item >
+        <item name="colorPrimaryDark" >@color/colorPrimaryDark</item >
+        <item name="colorAccent" >@color/colorAccent</item >
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="actionBarSize">40dp</item>
+        <item name="android:actionBarSize">40dp</item>
+    </style >
+
+    <style name="menuStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#aa000000</item>
+    </style>
+
+    <!--popu动画-->
+    <style name="CustomPopuAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popu_animation_show</item>
+        <item name="android:windowExitAnimation">@anim/popu_animation_hide</item>
+    </style>
+
+    <!--popu动画2-->
+    <style name="CustomPopuAnimation2" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popu_animation_show2</item>
+        <item name="android:windowExitAnimation">@anim/popu_animation_hide2</item>
+    </style>
+
+    <!--进度条样式-->
+    <style name="CustomProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizotal_custom</item>
+    </style>
+</resources >

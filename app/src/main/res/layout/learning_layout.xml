@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_leaning_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/primary_dark"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back_arrow_left"/>
+            <TextView
+                android:textColor="@drawable/back_selector"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textSize="18sp" />
+        </LinearLayout >
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单词学习"
+            android:textSize="20sp" />
+    </RelativeLayout >
+
+    <LinearLayout
+        android:id="@+id/ll_learning_01"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/rl_leaning_layout"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/read_bg"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/tv_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="word"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_spelling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="word"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="word"
+            android:textSize="25sp"
+            />
+    </LinearLayout >
+
+    <LinearLayout
+        android:layout_below="@id/ll_learning_01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:id="@+id/btn_pre"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="上一个" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:id="@+id/btn_addWord"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="加入生词" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:id="@+id/btn_addPlan"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="加入复习" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:textColor="@drawable/text_selector"
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="下一个" />
+    </LinearLayout >
+</LinearLayout >
