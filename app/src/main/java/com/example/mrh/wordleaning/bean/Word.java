@@ -1,6 +1,8 @@
 package com.example.mrh.wordleaning.bean;
 
-public class Word {
+import java.io.Serializable;
+
+public class Word implements Serializable {
 private String ID;
 private String meanning;
 private String spelling;

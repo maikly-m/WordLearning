@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     public List<WordList> mBookList1;
     public List<WordList> mBookList2;
     public List<WordList> mBookList3;
-    private String[] items = {"清空已学习", "清空已复习", "清空生词"};
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -194,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
                 final AlertDialog alertDialog = builder.create();
                 alertDialog.show();
                 alertDialog.getWindow().setLayout(Utils.dip2px(MainActivity.this, 160),
-                        Utils.dip2px(MainActivity.this, 176));
+                        Utils.dip2px(MainActivity.this, 175));
                 cb_setting_01.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick (View v) {

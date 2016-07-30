@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单元测试"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/divider"/>
+
+    <RadioGroup
+        android:id="@+id/rg_test"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:id="@+id/rb_test_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="英语单词（上）"
+            />
+
+        <RadioButton
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:id="@+id/rb_test_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="英语单词（中）" />
+
+        <RadioButton
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:id="@+id/rb_test_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="英语单词（下）" />
+    </RadioGroup >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/divider"/>
+    <ExpandableListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+    </ExpandableListView >
+</LinearLayout >
