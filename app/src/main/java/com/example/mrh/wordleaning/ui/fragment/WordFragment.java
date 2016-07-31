@@ -86,8 +86,6 @@ public class WordFragment extends Fragment {
         mAttentions = new DataAccess().queryAttention(getContext(), "NEW_WORD = '" + "1" + "'",
                 null);
         for (int i = 0; i < mAttentions.size(); i++){
-
-            Log.d("TAG", "getData: "+mAttentions.get(i).getSpelling());
         }
         while (mWordAdapter == null){
             SystemClock.sleep(10);

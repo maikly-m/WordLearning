@@ -49,7 +49,8 @@
         android:id="@+id/fl_test_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/rl_leaning_layout" >
+        android:layout_below="@id/rl_leaning_layout"
+        android:background="@drawable/test_bg">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -143,17 +144,25 @@
                 >
 
                 <Button
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/button_selector2"
+                    android:textColor="@drawable/text_selector"
                     android:id="@+id/btn_answer"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_alignParentLeft="true"
                     android:text="查看答案"
                     />
 
                 <Button
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_selector2"
+                    android:textColor="@drawable/text_selector"
                     android:id="@+id/btn_next"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_alignParentRight="true"
                     android:text="下一个"
                     />

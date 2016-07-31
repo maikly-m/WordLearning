@@ -258,6 +258,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 mPopupWindow.dismiss();
+                View view = View.inflate(MainActivity.this, R.layout.about_layout, null);
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setView(view);
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+                alertDialog.getWindow().setLayout(Utils.dip2px(MainActivity.this, 240),
+                        Utils.dip2px(MainActivity.this, 148));
             }
         });
     }

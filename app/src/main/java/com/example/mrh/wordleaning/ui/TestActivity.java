@@ -106,7 +106,8 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
             int randomTestIndex = random.nextInt(Integer.parseInt(mBookList.get
                     (randomListIndex).getCount()));
             ArrayList<Word> words2 = new DataAccess().QueryWord(TestActivity.this, mBookList
-                    .get(randomListIndex).getBookID(), "LIST = '" + (randomListIndex + 1) + "'", null);
+                    .get(randomListIndex).getBookID(), "LIST = '" + (randomListIndex + 1) + "'",
+                    null);
             mWords.add(words2.get(randomTestIndex));
         }
         runOnUiThread(new Runnable() {
@@ -241,6 +242,13 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(TestActivity.this, "选择错误", Toast.LENGTH_SHORT).show();
                 }
                 tv_answer.setText("正确答案: " + mCorrectChar + "." + mWords.get(0).getMeanning());
+                for (int i = 0; i < rg_answer.getChildCount(); i++){
+                    RadioButton btn = (RadioButton) rg_answer.getChildAt(i);
+                    if (btn.isChecked()){
+                        continue;
+                    }
+                    btn.setClickable(false);
+                }
             }
             break;
         case R.id.btn_next:
@@ -285,6 +293,10 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
                     public void run () {
                         tv_answer.setText("");
                         rg_answer.clearCheck();
+                        rb_answer_01.setClickable(true);
+                        rb_answer_02.setClickable(true);
+                        rb_answer_03.setClickable(true);
+                        rb_answer_04.setClickable(true);
                     }
                 });
                 Random random = new Random();

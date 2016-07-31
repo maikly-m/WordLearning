@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/setting_popuwindow"/>
+            android:src="@drawable/ic_about"/>
 
         <TextView
             android:layout_marginLeft="5dp"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="17sp"
-            android:text="设置"/>
+            android:text="关于"/>
     </LinearLayout >
 
 </LinearLayout >
